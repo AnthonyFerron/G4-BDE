@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 1300px) {
+  body {
+    background-image: url(icons/fond1.png);
+  }
+
+  #bande_head_mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .photo_mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .img {
+    display: flex;
+    justify-content: right;
+  }
+
+  #bande_head_pc {
+    visibility: visible;
+    display: inline-block;
+    background-color: #D2F8F6;
+    height: 150px;
+    width: 100%;
+  }
+
+  #bande_head_pc h1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    display: flex;
+    /* Transformation en flexbox */
+    padding: 0;
+    /* Suppression des marges internes */
+  }
+
+  .menu a {
+    display: block;
+    /* Transformation en block */
+    min-width: 120px;
+    /* Largeur minimale des liens */
+
+    text-align: center;
+    /* Centrage du texte */
+    color: black;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Suppression du soulignement */
+    transition: all 0.5s;
+    /* Ajout des effets de transition */
+    margin-top: 25px;
+    font-size: large;
+  }
+
+  .menu li {
+    list-style-type: none;
+    /* Suppression des puces */
+  }
+
+  .menu li a:hover {
+    color: #54c1f2;
+  }
+
+
+  .photo_pc {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15%;
+    text-align: center;
+  }
+
+  .event1 {
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #photo_ski {
+    margin-left: 5%;
+    border-radius: 5%;
+  }
+
+
+  #contour_laser
+  {
+    display: flex;
+    justify-content: left;
+  }
+
+  #contour_photo
+  {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+  }
+
+  .row
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .texte_integration
+  {
+    margin-left: 5%;
+  }
+
+  #photo_laser_kart {
+    margin-right: 5%;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+  }
+  .mid1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo_text {
+    font-size: large;
+  }
+
+  .photo_membre {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+  }
+
+  .event2 {
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #photo_ski1 {
+    margin-left: 5%;
+    border-radius: 5%;
+    width: 20%;
+    height: auto;
+  }
+
+
+  #contour_ski1
+  {
+    display: flex;
+    justify-content: left;
+  }
+
+
+  .texte_integration2
+  {
+    margin-left: 5%;
+  }
+
+}
+
+/*********************************************************/
+
+/*
+    ZONE MOBILE
+    ACCES STRICTEMENT INTERDIT A ANTHONY FERRON !!
+    tg
+*/
+
+/*********************************************************/
+
+
+@media (max-width: 1300px) {
+
+  .body {
+    background-image: url(icons/fond1.png);
+  }
+
+
+  #bande_head_pc {
+    visibility: hidden;
+    display: none;
+  }
+
+  .photo {
+    visibility: hidden;
+    display: none;
+  }
+
+  #logo_mobile {
+    display: inline-block;
+    justify-content: right;
+  }
+
+  #bande_head_mobile {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2F8F6;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #bande_head_mobile h1 {
+    margin-top: 5%;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .menu {
+    margin: 10px;
+    padding: 0px;
+  }
+
+  .menu a {
+    font-size: smaller;
+    text-align: center;
+    /* Centrage du texte */
+    color: black;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Suppression du soulignement */
+    transition: all 0.5s;
+    /* Ajout des effets de transition */
+  }
+
+  .menu li {
+    list-style-type: none;
+    /* Suppression des puces */
+  }
+
+  .menu li a:hover {
+    color: #54c1f2;
+  }
+
+
+  .photo_membre {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+  }
+
+  .photo {
+    visibility: hidden;
+    display: none;
+  }
+
+  .events {
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #photo_ski {
+    margin-left: 5%;
+    border-radius: 5%;
+    visibility: hidden;
+    display: none;
+  }
+
+
+  #photo_laser_kart {
+    vertical-align: middle;
+    margin-right: 5%;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .photo_texte {
+    font-size: large;
+    border-radius: 100%;
+  }
+
+}

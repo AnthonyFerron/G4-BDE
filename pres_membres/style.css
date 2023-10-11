@@ -1,0 +1,33 @@
+/*.baata{
+  width : 150px; height : 150px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+  margin-left: 5%;
+}
+*/
+.pres {
+
+}
+
+.pres_gauche {
+    background-color: blue;
+    height: 250px;
+}
+
+.pres_droit {
+    background-color: red;
+    height: 250px;
+}
+
+.paul{
+  width : 125px; height : 125px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+  margin-left: 5%;
+  margin-top: 1%;
+
+}
