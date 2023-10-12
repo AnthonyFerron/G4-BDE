@@ -10,7 +10,7 @@
     height: 100vh;
 }
 
-#image1 {
+.image {
     max-width: 33%;
     height: auto;
 }
