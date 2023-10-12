@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    .body {
+      background-image: url(/icons/fond1.png);
+    }
+  
+  
+    .photo_mobile p
+    {
+      min-width: 150px;
+    }
+  
+    .photo_mobile
+    {
+      margin-left: 5%;
+    }
+  
+    .texte_integration
+    {
+      margin-left: 1%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .texte_integration2
+    {
+      margin-left: 10%;
+      width: 400px;
+    }
+  
+  
+    #logo_mobile {
+      display: inline-block;
+      justify-content: right;
+    }
+  
+    #bande_head_mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #D2F8F6;
+      height: 150px;
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  
+    #bande_head_mobile h1 {
+      margin-top: 5%;
+      display: inline-block;
+      justify-content: center;
+    }
+  
+    .menu {
+      margin: 10px;
+      padding: 0px;
+    }
+  
+    .menu a {
+      font-size: smaller;
+      text-align: center;
+      /* Centrage du texte */
+      color: black;
+      /* Couleur du texte */
+      text-decoration: none;
+      /* Suppression du soulignement */
+      transition: all 0.5s;
+      /* Ajout des effets de transition */
+    }
+  
+    .menu li {
+      list-style-type: none;
+      /* Suppression des puces */
+    }
+  
+    .menu li a:hover {
+      color: #54c1f2;
+    }
+  
+  
+    .photo_membre {
+      border-radius: 50%;
+      width: 100px;
+      height: auto;
+    }
+  
+  
+    .events {
+      margin-top: 10%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    #photo_ski1 {
+      margin-left: 5%;
+      border-radius: 5%;
+      width: 200%;
+      height: auto;
+    }
+  
+  
+    #photo_laser_kart {
+      vertical-align: middle;
+      margin-right: 5%;
+      border-radius: 5%;
+      width: 80%;
+      height: auto;
+    }
+  
+    #contour_photo
+    {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #venez
+    {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #ligne_separation
+    {
+      height: 3px;
+      min-width: max-content;
+      background-color: black;
+    }
+  
+  
+    .photo_texte {
+      font-size: large;
+      border-radius: 100%;
+    }
+  

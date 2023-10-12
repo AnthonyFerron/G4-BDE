@@ -1,0 +1,42 @@
+#titre {
+    text-align: center;
+    height: 25%;
+    width: 100%;
+    padding: 2%;
+    font-size: large;
+    font-weight: bold;
+    color: bisque ;
+}
+
+.formres {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#formulaire {
+    background-color: greenyellow;   
+    width: 50%;
+    height: auto;
+}
+
+.input {
+    margin: 10%;
+    background-color: rgb(255, 0, 98);
+}
+
+#reseaux {
+    background-color: rgb(165, 242, 238);
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#boutton {
+    color:  rgb(165, 242, 238);
+    width: 4%;
+    height: 12%;
+}
