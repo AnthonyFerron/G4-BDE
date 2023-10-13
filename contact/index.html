@@ -3,7 +3,7 @@
 <html lang="fr">
 
 <head>
-  <link rel="stylsheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/vnd.icon" href="icons/logo.png">
@@ -13,44 +13,106 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>      
 
-<body id="body">
+  <body id="body">
+    <div id="bande_head_pc">
+      <div class="row">
+        <div class="col-5">
+          <ul class="menu">
+            <li>
+              <a href="/index.html">Acceuil</a>
+            </li>
+            <li>
+              <a href="/pres_membres/index.html">Les Membres</a>
+            </li>
+            <li>
+              <a href="/evenements/index.html">Evenements</a>
+            </li>
+            <li>
+              <a href="/Souvenirs/index.html">Souvenirs</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h1>BDE G4</h1>
+        </div>
+        <div class="col-4">
+          <img src="/icons/logo.png" style="width: 81px; float: right; margin-top: 10px; border-radius: 10%;">
+        </div>
+      </div>
+    </div>
+
+
+
     <div id="titre" >
-      <h1>CONTACTEZ NOUS</h1>
+      <h1>CONTACTEZ-NOUS</h1>
     </div>
     <div class="formres">
-     <div id="formulaire" >
+     <div class="formulaire" >
         <h3>formulaire de contact</h3>
         <p>Laissez nous votre message.</p>
         <div class="input">
-    <input type="text" id="name" name="name" placeholder="NOM...">
+    <input type="text" id="name" name="name" placeholder="NOM..." class="form-control">
         </div>
         <div class="input">
-    <input type="text" id="fname" name="firstname" placeholder="PRENOM...">
+    <input type="text" id="fname" name="firstname" placeholder="PRENOM..." class="form-control">
         </div>
         <div class="input">
-    <input type="text" id="mail" name="mail" placeholder="MAIL...">
+    <input type="text" id="mail" name="mail" placeholder="MAIL..." class="form-control">
         </div>
         <div class="input">
-    <input type="text" id="message" name="message" placeholder="MESSAGE...">
+    <input type="text" id="message" name="message" placeholder="MESSAGE..." class="form-control">
         </div>
-    <input id="boutton" type="submit" value="envoyer">    
-    </div>
-      <div id="reseaux">   
-        <h3>reseaux</h3>
-        <div>
-          <img src="'/icons/icone fcbk.png" alt="uh oh... sorry it's confidential">
+    <button type="button" class="btn btn-outline-info">ENVOYER</button>
+      </div>
+        <di id="reseaux">   
+          <h3>reseaux</h3>
+            <img type="button" class="icon" src="/icons/icone_fcbk.png" class="col-4">
+            <img type="button" class="icon" src="/icons/icone_twitter.png">
+            <img type="button" class="icon" src="/icons/icone_insta.png">
+            <p>suivez nous sur les réseaux</p>
+            <img class="icon" src="/icons/icone_Gmail.png">
+            <p>Ou envoyez nous un e-mail via cette adresse</p>
+            <p></p>
+          </div>  
         </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-      
       </div>
     </div>
     
+    
+    <div id="bande_foot_pc">
+      <div class="row" class="col-1">
+        <div id="copyright">
+          <h1>BDE G4</h1>
+          <a href="/pres_membres/index.html">Mentions légales</a>
+        </div>
+        
+        <div class="col-5">
+          <ul class="menu">
+            <li>
+              <a href="index.html">Acceuil</a>
+            </li>
+            <li>
+              <a href="/pres_membres/index.html">Les Membres</a>
+            </li>
+            <li>
+              <a href="/evenements/index.html">Evenements</a>
+            </li>
+            <li>
+              <a href="/Souvenirs/index.html">Souvenirs</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

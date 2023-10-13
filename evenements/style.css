@@ -3,16 +3,35 @@
     display: flex;
     justify-content: center;
 }
-.image-container {
+
+.horizontal-line {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.image {
-    max-width: 33%;
+.column {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 30%; 
     height: auto;
+
 }
 
 /* .col-2

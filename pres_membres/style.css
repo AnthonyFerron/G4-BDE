@@ -1,15 +1,65 @@
+vv.pres-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.pres-right {
+  background-color: red;
+  border-radius: 999em 40px 40px 999em;
+}
+
+.pres-left {
+  background-color: blue;
+  flex-direction: row-reverse;
+  border-radius: 40px 999em 999em 40px;
+}
+
+.pres {
+  height: 250px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pres-right-container {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.pres-img{
+  width : 200px; height : 200px;
+  border: none;
+  -moz-border-radius : 100%;
+  -webkit-border-radius : 100%;
+  border-radius : 100%;
+  margin-right:4%;
+  margin-left:2.5%;
+}
+
+.pres-name {
+  text-align: center;
+}
+
+/* new */
 .pres_gauche {
-    background-color: blue;
-    height: 250px;
-    width: 100%;
-    border-radius: 10% 0 0 10%;
+  background-color: blue;
+  height: 250px;
+  width: 100%;
+  margin-left:5%;
+  margin-top: 5%;
+  border-radius: 999em 40px 40px 999em;
 }
 
 .pres_droit {
-    background-color: red;
-    height: 250px;
-    width: 100%;
-    border-radius: 0 10% 10% 0;
+  background-color: red;
+  height: 250px;
+  width: 100%;
+  margin-top: 5%;
+  margin-right: 0%;
+  border-radius: 40px 999em 999em 40px;
 }
 
 .image_gauche{
@@ -20,7 +70,6 @@
   border-radius : 100%;
   margin-left: 15%;
   margin-top: 1.1%;
-
 }
 
 .text {
@@ -30,11 +79,11 @@
 }
 
 .img_gauche {
-  width: 20%;
+  width: 15%;
 }
 
 img_droite {
-  width: 20%;
+  width: 15%;
 }
 
 .image_droit{
@@ -45,4 +94,10 @@ img_droite {
   border-radius : 100%;
   margin-right: 15%;
   margin-top: 1.1%;
+}
+
+.name {
+  text-align: center;
+  justify-content: left;
+  font-size: x-large;
 }

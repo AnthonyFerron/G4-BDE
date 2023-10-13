@@ -50,7 +50,6 @@
     /* Transformation en block */
     min-width: 120px;
     /* Largeur minimale des liens */
-
     text-align: center;
     /* Centrage du texte */
     color: black;
@@ -83,11 +82,39 @@
 
   .event1 {
     margin-top: 10%;
+    display: flex;
     text-align: center;
     justify-content: center;
   }
 
-  #photo_ski {
+  .event2
+  {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .event1 p
+  {
+    font-size: smaller;
+  }
+
+  .event2 p
+  {
+    font-size: smaller;
+  }
+
+  .event1 h1
+  {
+  font-size: large;
+  }
+
+  .event2 h1
+  {
+  font-size: large;
+  }
+
+  #photo_ski1 {
     margin-left: 5%;
     border-radius: 5%;
   }
@@ -103,12 +130,22 @@
   {
     display: flex;
     justify-content: right;
-    width: 50%;
+    max-width: 600px;
+    height: auto;
   }
 
-  #ligne_laser
+  #photo_laser_kart {
+    margin-right: 5%;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  #ligne_separation
   {
-    
+    background-color: black;
+    min-width: 500px;
+    height: 3px;
   }
 
   .row
@@ -124,12 +161,43 @@
     margin-left: 5%;
   }
 
-  #photo_laser_kart {
-    margin-right: 5%;
-    border-radius: 5%;
-    width: 100%;
-    height: auto;
+
+  .boutton_clic {
+    border: 1px solid #54c1f2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #54c1f2;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
   }
+
+  .boutton_clic:focus-visible {
+   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+   transition: box-shadow .2s;
+  } 
+
+  .boutton_clic:active {
+   background-color: #F7F7F7;
+   border-color: #000000;
+   transform: scale(.96);
+  } 
+
+
   .mid1 {
     text-align: center;
     display: flex;
@@ -146,19 +214,13 @@
     height: auto;
   }
 
-  .event2 {
-    margin-top: 10%;
-    text-align: center;
-    justify-content: center;
-  }
 
   #photo_ski1 {
     margin-left: 5%;
     border-radius: 5%;
-    width: 20%;
+    width: 100%;
     height: auto;
   }
-
 
   #contour_ski1
   {
@@ -166,8 +228,13 @@
     justify-content: left;
   }
 
-
   .texte_integration2
   {
     margin-left: 5%;
+  }
+
+  #bande_foot_pc
+  {
+    margin-top: 5%;
+    background-color: #D2F8F6;
   }

@@ -1,3 +1,50 @@
+#body {
+    background-image: url(/icons/fond1.png);
+}
+
+#bande_head_pc {
+visibility: visible;
+display: inline-block;
+background-color: #D2F8F6;
+height: 150px;
+width: 100%;
+}
+
+.menu {
+display: flex;
+    /* Transformation en flexbox */
+padding: 0;
+    /* Suppression des marges internes */
+}
+
+.menu a {
+display: block;
+    /* Transformation en block */
+min-width: 120px;
+    /* Largeur minimale des liens */
+text-align: center;
+    /* Centrage du texte */
+color: black;
+    /* Couleur du texte */
+text-decoration: none;
+    /* Suppression du soulignement */
+transition: all 0.5s;
+    /* Ajout des effets de transition */
+margin-top: 25px;
+font-size: large;
+}
+
+.menu li {
+list-style-type: none;
+    /* Suppression des puces */
+}
+
+.menu li a:hover {
+color: #54c1f2;
+}
+
+
+
 #titre {
     text-align: center;
     height: 25%;
@@ -5,38 +52,48 @@
     padding: 2%;
     font-size: large;
     font-weight: bold;
-    color: bisque ;
+    color: rgb(0, 15, 64,) ;
 }
 
 .formres {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: black;
 }
 
 #formulaire {
     background-color: greenyellow;   
-    width: 50%;
-    height: auto;
+    width: 30%;
+    
 }
 
-.input {
-    margin: 10%;
-    background-color: rgb(255, 0, 98);
+#icon{
+    display: flex;
+    justify-content: space-around;
+    margin: 50%;
+    padding: 50%;
+
 }
 
 #reseaux {
-    background-color: rgb(165, 242, 238);
-    width: 50%;
-    height: auto;
+    background-color: #D2F8F6;
+    width: 30%;
     border-radius: 5%;
-    margin-left: 3%;
     margin-right: 3%;
+    
 }
 
 #boutton {
-    color:  rgb(165, 242, 238);
+    background-color: rgb(165, 242, 238);
     width: 4%;
     height: 12%;
+    color: rgb(0, 15, 64,);
+}
+
+.input {
+    margin: 3%;
+}
+#bande_foot_pc  {
+    margin-top: 10%;
+    background-color: #D2F8F6;
 }
