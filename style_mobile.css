@@ -8,66 +8,7 @@
   background-image: url(/icons/fond1.png);
 }
 
-.photo_mobile p {
-  min-width: 150px;
-  font-size: 10px;
-}
-
-.photo_mobile {
-  margin-left: 5%;
-}
-
-.photo_mobile img {
-  width: 100%;
-}
-
-.texte_hiver {
-  margin-left: 1%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.texte_integration {
-  display: flex;
-  justify-content: center;
-}
-
-.texte_integration {
-  text-align: center;
-}
-
-.texte_integration2 {
-  text-align: center;
-}
-
-#venez {
-  text-align: center;
-}
-
-#photo_ski1 {
-  margin-left: 5%;
-  border-radius: 5%;
-  width: 90%;
-  height: auto;
-}
-
-.col-6 {
-  display: flex;
-  justify-content: center;
-}
-
-#logo_mobile {
-  display: inline-block;
-  justify-content: right;
-}
-
-#logo_mobile_logo {
-  width: 81px;
-  float: right;
-  margin-top: 10px;
-  border-radius: 10%;
-}
+/* Début Header */
 
 #bande_head_mobile {
   display: inline-block;
@@ -115,30 +56,69 @@
   color: #54c1f2;
 }
 
+#logo_mobile {
+  display: inline-block;
+  justify-content: right;
+}
+
+#logo_mobile_logo {
+  width: 81px;
+  float: right;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+/* Fin header */
+
+/* Début photos membres */
+
+
 .photo_membre {
   border-radius: 50%;
 }
 
-#photo_texte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.photo_mobile p {
+  min-width: 150px;
+  font-size: 10px;
 }
+
+.photo_mobile {
+  margin-left: 5%;
+}
+
+.photo_mobile img {
+  width: 100%;
+}
+
 
 #photo_texte p {
   text-align: center;
 }
+
+.col-6 {
+  display: flex;
+  justify-content: center;
+}
+
 
 .col-6 img {
   width: 100px;
   height: 100px;
 }
 
-.events {
-  margin-top: 10%;
-  text-align: center;
-  justify-content: center;
+/* Bande séparatrice */
+
+#ligne_separation {
+  height: 3px;
+  min-width: max-content  ;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  background-color: #54c1f2;
 }
+
+
+/* Évennement 1 */
+
 
 #photo_laser_kart {
   vertical-align: middle;
@@ -154,18 +134,86 @@
   margin-bottom: 5%;
 }
 
-#ligne_separation {
-  height: 3px;
-  min-width: max-content;
-  margin-top: 3%;
-  margin-bottom: 2%;
-  background-color: black;
+.texte_integration {
+  text-align: center;
 }
 
-#texte_photo {
+/* Fin évennement 1 */
+
+/* Évennement 2 */
+
+
+
+.texte_hiver {
+  margin-left: 1%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#photo_ski1 {
+  margin-left: 5%;
+  border-radius: 5%;
+  width: 90%;
+  height: auto;
+}
+
+
+.texte_integration2 {
+  text-align: center;
+}
+
+#venez {
+  text-align: center;
+}
+
+
+/* Fin evennement 2 */
+
+/* Début style boutons*/
+
+.boutton_clic {
+  border: 1px solid #54c1f2;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #54c1f2;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.boutton_clic:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.boutton_clic:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.boutton {
   display: flex;
   justify-content: center;
 }
+
+/* Fin style boutons */
+
+/* Début footer */
 
 #copyright {
   text-align: center;
@@ -174,11 +222,10 @@
 #bande_foot_mobile {
   margin-top: 5%;
   background-color: #d2f8f6;
+  text-align: center;
+
 }
 
-#bande_foot_mobile {
-  text-align: center;
-}
 
 .alignement {
   min-width: max-content;
@@ -204,42 +251,4 @@
   color: #54c1f2;
 }
 
-.boutton_clic {
-  border: 1px solid #54c1f2;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #54c1f2;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-}
-
-.boutton_clic:focus-visible {
- box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
- transition: box-shadow .2s;
-} 
-
-.boutton_clic:active {
- background-color: #F7F7F7;
- border-color: #000000;
- transform: scale(.96);
-}
-
-.boutton
-{
-  display: flex;
-  justify-content: center;
-}
+  /* Fin footer */

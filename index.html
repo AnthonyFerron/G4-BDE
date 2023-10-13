@@ -7,17 +7,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/vnd.icon" href="icons/logo.png">
-  <title>BDE de l'institut G4</title>
+  <title>Acceuil</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+  <script src="javascript.js"></script>
 </head>
 
 <body id="body">
   <div id="bande_head_pc">
+    <!-- Header -->
     <div class="row">
       <div class="col-5">
         <ul class="menu">
@@ -36,21 +37,25 @@
           <li>
             <a href="/contact/index.html">Contacts</a>
           </li>
+
+          <!-- Rajouter des liens ici, 7 liens maximum en fonction de la taille du texte-->
+
         </ul>
       </div>
       <div class="col-2">
         <h1>BDE G4</h1>
       </div>
       <div class="col-4">
-        <img src="/icons/logo.png" style="width: 81px; float: right; margin-top: 10px; border-radius: 10%;">
+        <img src="/icons/logo.png" class="logo"
+          style="width: 81px; float: right; margin-top: 10px; border-radius: 10%;">
       </div>
     </div>
   </div>
 
 
 
-  </div>
   <div class="photo_pc">
+
     <div class="photo_texte">
       <img src="icons/Paul.png" class="photo_membre">
       <p>Paul Antoine</p>
@@ -62,44 +67,48 @@
       <p>Teddy Fontep</p>
       <p>Vice-président</p>
     </div>
-    <div class="photo_text">
+    <div class="photo_texte">
       <img src="icons/Nathael.png" class="photo_membre">
       <p>Nathael Stalder</p>
       <p>Secrétaire</p>
     </div>
 
-    <div class="photo_text">
+    <div class="photo_texte">
       <img src="icons/Cedrick.png" class="photo_membre">
       <p>Cédrick Melzheim</p>
       <p>Trésorier</p>
     </div>
 
-    <div class="photo_text">
+    <div class="photo_texte">
       <img src="icons/Tom.png" class="photo_membre">
       <p>Tom Victor</p>
       <p>Résponsable communication</p>
     </div>
 
-    <div class="photo_text">
+    <div class="photo_texte">
       <img src="icons/Camil.png" class="photo_membre">
       <p>Camil Nitel Hadj</p>
       <p>Responsable évènement</p>
     </div>
   </div>
 
+  <div id="ligne_separation">
+  </div>
+  <!-- Bande géré par de CSS -->
+
   <div class="event1">
     <div id="contour_laser">
-      <div class="row">
-        <h1 class="texte_integration">Journée d'intégration de l'institut G4 !</h1>
-        <p class="texte_integration">Au programme:<br><br>- Karting<br>- Bowling<br>- Laser Game<br>- On finit la
-          journee au bar à discuter entre nouveaux et anciens
-          élèves.</p>
-        <br>
+      <div v class="row">
+        <h1>Journée d'intégration de l'institut G4 !</h1>
+        <p>Au programme :<br></p>
+        <p class="text_karting">- Karting<br>- Bowling<br>- Laser Game<br></p>
+        <p>On finit la journée au bar à discuter entre nouveaux et anciens élèves.</p>
         <h1>Venez nombreux !</h1>
         <div>
-        <button type="button" class="btn btn-outline-info">En savoir plus</button>
+          <button onclick="window.location.href='https://bit.ly/3uTw3UC';" type="button" class="btn btn-outline-info">En
+            savoir plus</button>
         </div>
-        <p>Date et lieu à convenir.</p>
+        <p>Date et lieu à convenir</p>
       </div>
       <div id="contour_photo">
         <img src="icons/Integration.jpg" id="photo_laser_kart">
@@ -107,35 +116,41 @@
     </div>
   </div>
 
+  <div id="ligne_separation2">
+  </div>
+
   <div class="event2">
     <div class="row">
-        <div class="col-6">
+      <div class="col-6">
         <img src="icons/Ski.png" id="photo_ski1">
-        </div>
-        <div class="col-6">
+      </div>
+      <div class="col-6">
         <h1 class="texte_integration2"><br><br><br>Journées ski avec le BDE
         </h1>
-        <br>
         <p class="texte_integration2">Venez passer la journée sur les pistes des plus belles stations avec l'équipe
           BDE de votre école.<br><br>Tout au long de l'hiver, nous proposons des journées complètes de ski
           sur plusieurs stations différentes.
-          </p>
-        <h1>Venez nombreux !</h1>
-        <button type="button" class="btn btn-outline-info">En savoir plus</button>
-        <p><br><br>Hiver 2023</p>
-        </div>
+        </p>
+        <h1 class="texte_integration2">Venez nombreux !</h1>
+        <button onclick="window.location.href='https://bit.ly/3uTw3UC';" type="button" class="btn btn-outline-info">En
+          savoir plus</button>
+        <p><br>Hiver 2023</p>
       </div>
+    </div>
   </div>
 
-  
+
   <div id="bande_foot_pc">
+
+    <!-- Footer -->
+
     <div class="row" class="col-1">
       <div id="copyright">
         <h1>BDE G4</h1>
         <a href="/pres_membres/index.html">Mentions légales</a>
       </div>
-      
-      <div class="col-5">
+
+      <div class="col-5 cadre_menu">
         <ul class="menu">
           <li>
             <a href="#">Acceuil</a>
@@ -154,9 +169,7 @@
           </li>
         </ul>
       </div>
-      </div>
     </div>
   </div>
 </body>
-
 </html>
