@@ -1,3 +1,64 @@
+
+#body {
+    background-image: url(/icons/fond1.png);
+}
+
+#bande_head_pc {
+visibility: visible;
+display: inline-block;
+background-color: #D2F8F6;
+height: 150px;
+width: 100%;
+}
+
+.menu {
+display: flex;
+    /* Transformation en flexbox */
+padding: 0;
+    /* Suppression des marges internes */
+}
+
+.menu a {
+display: block;
+    /* Transformation en block */
+min-width: 120px;
+    /* Largeur minimale des liens */
+text-align: center;
+    /* Centrage du texte */
+color: black;
+    /* Couleur du texte */
+text-decoration: none;
+    /* Suppression du soulignement */
+transition: all 0.5s;
+    /* Ajout des effets de transition */
+margin-top: 25px;
+font-size: large;
+}
+
+.menu li {
+list-style-type: none;
+    /* Suppression des puces */
+}
+
+.menu li a:hover {
+color: #54c1f2;
+}
+
+
+
+#titre {
+    text-align: center;
+    height: 25%;
+    width: 100%;
+    padding: 2%;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(0, 15, 64,) ;
+}
+
+
+
+
 .titre
 {
     display: flex;
@@ -12,3 +73,27 @@
     margin-left: 10%;
     margin-top: 3%;
 }
+
+
+
+
+
+#bande_foot_pc  {
+    margin-top: 5%;
+    background-color: #D2F8F6;
+}
+
+
+.cadre_menu
+{
+  display: flex;
+  justify-content: center;
+}
+
+.row
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }

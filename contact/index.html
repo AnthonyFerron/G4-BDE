@@ -56,20 +56,20 @@
      <div class="formulaire" class="col-5" >
         <h3>formulaire de contact</h3>
         <p>Laissez nous votre message.</p>
-        <div class="input">
-    <input type="text" id="name" name="name" placeholder="NOM..." class="form-control">
-        </div>
-        <div class="input">
-    <input type="text" id="fname" name="firstname" placeholder="PRENOM..." class="form-control">
-        </div>
-        <div class="input">
-    <input type="text" id="mail" name="mail" placeholder="MAIL..." class="form-control">
-        </div>
-        <div class="input">
-    <input type="text" id="message" name="message" placeholder="MESSAGE..." class="form-control">
-        </div>
-    <button type="button" class="btn btn-outline-info">ENVOYER</button>
-      </div>
+        <form name="register-form" method="post" class="form form-control">
+          <div>
+          <label for="register-form[name]">Nom:</label>
+          <input type="text" id="register-form[name]" name="name" />
+          </div>
+          <div>
+          <label for="register-form[mail]" >Adresse électronique:</label>
+          <input type="text" id="register-form[mail]" size="60" name="email" />
+          </div>
+          <div class="buttons">
+          <input type="submit" value="Envoyer" name="Envoyer" />
+          <input type="reset" value="Réinitialiser" name="Réinitialiser" />
+          </div>
+         </form>
         <di id="reseaux">   
           <h3>reseaux</h3>
             <img type="button" class="icon" src="/icons/icone_fcbk.png" class="col-4">
