@@ -47,7 +47,7 @@ color: #54c1f2;
 
 #titre {
     text-align: center;
-    height: 25%;
+    height: 50%;
     width: 100%;
     padding: 2%;
     font-size: large;
@@ -62,9 +62,12 @@ color: #54c1f2;
 }
 
 #formulaire {
-    background-color: greenyellow;   
+    
     width: 30%;
     
+}
+.btn {
+  margin-top: 5%;  
 }
 
 #icon{

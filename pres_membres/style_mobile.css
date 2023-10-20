@@ -1,3 +1,12 @@
+.row
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  
 /* head */
 
 #bande_head_pc {
@@ -143,22 +152,7 @@ body {
 
 /* footer */
 
-  .row
-  {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  #bande_foot_pc
-  {
-    margin-top: 5%;
-    background-color: #D2F8F6;
-  }
-
-  .cadre_menu
-  {
-    display: flex;
-    justify-content: center;
-  }
+#bande_foot_pc
+{
+  margin-top: 10%;
+}
