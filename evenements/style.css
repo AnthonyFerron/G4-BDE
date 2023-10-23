@@ -1,7 +1,4 @@
-
-#body {
-    background-image: url(/icons/fond1.png);
-}
+/* header */
 
 #bande_head_pc {
 visibility: visible;
@@ -45,37 +42,39 @@ color: #54c1f2;
 }
 
 
-/* ..... */
-#titre {
-    text-align: center;
-    height: 25%;
-    width: 100%;
-    padding: 2%;
-    font-size: large;
-    font-weight: bold;
-    color: rgb(0, 15, 64,) ;
+/* body */
+body {
+    background-image: url(/icons/fond1.png);
 }
-
-
-/* ..... */
 
 .titre
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.bouton {
+    position: absolute;
+    bottom:0;
+    margin-bottom: 5%;
+}
+
+.paragraphe {
+    margin-bottom: 20%;
 }
 
 .card {
-    background-color: #D2F8F6;
+    background-color: red;
+    border-radius: 50%;
     width: 30%;
-    border-radius: 5%;
+    border-radius: 20%;
     margin-right: 10%; 
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 10%;
+
 }
 
 
-/* .... */
+/* footer */
 
 #bande_foot_pc  {
     margin-top: 5%;

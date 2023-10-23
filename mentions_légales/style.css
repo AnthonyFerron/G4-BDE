@@ -6,6 +6,7 @@
     background-color: #D2F8F6;
     height: 150px;
     width: 100%;
+    font-family: 'Oswald', sans-serif;
   }
   
   #bande_head_pc h1 {
@@ -49,12 +50,41 @@
   
   /* body */
 
+  @font-face {
+    font-family: "Roboto";
+    src: url("../polices/Roboto-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url("../polices/Oswald-Regular.ttf");
+  }
+
+  body {
+    background-image: url(../icons/fond1.png);
+  }
+
   .fond {
     text-align: center;
     margin-top: 2%;
-    background-color: aqua;
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: #a5f2ee;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5%;
+}
+
+.texte {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.section {
+  font-family: 'Roboto', sans-serif;
+}
+
+.paragraphe {
+  font-size: x-large;
+  font-family:'Oswald', sans-serif;
 }
 
   /* footer */
@@ -71,6 +101,7 @@
   {
     margin-top: 5%;
     background-color: #D2F8F6;
+    font-family: 'Oswald', sans-serif;
   }
 
   .cadre_menu
