@@ -1,173 +1,154 @@
-<!DOCTYPE html>
-
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/vnd.icon" href="icons/logo.png">
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/vnd.icon" href="icons/logo.png">
-  <title>Accueil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="javascript.js"></script>
-</head>
+  <body>
+    <nav class="navigation grid">
+      <ul class="links">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
 
-<body id="body">
-  <div id="bande_head_pc">
-    <!-- Header -->
-    <div class="row">
-      <div class="col-5">
-        <ul class="menu">
-          <li>
-            <a href="#">Accueil</a>
-          </li>
-          <li>
-            <a href="pres_membres/index.html">Les Membres</a>
-          </li>
-          <li>
-            <a href="evenements/index.html">Evenements</a>
-          </li>
-          <li>
-            <a href="Souvenirs/index.html">Souvenirs</a>
-          </li>
-          <li>
-            <a href="contact/index.html">Contacts</a>
-          </li>
+        <li>
+          <a href="pres_membres/index.html">Les Membres</a>
+        </li>
 
-          <!-- Rajouter des liens ici, 7 liens maximum en fonction de la taille du texte-->
+        <li>
+          <a href="evenements/index.html">Evenements</a>
+        </li>
 
-        </ul>
-      </div>
-      <div class="col-2">
-        <h1>BDE G4</h1>
-      </div>
-      <div class="col-4">
-        <img src="icons/logo.png" class="logo"
-          style="width: 81px; float: right; margin-top: 10px; border-radius: 10%;">
-      </div>
-    </div>
-  </div>
+        <li>
+          <a href="Souvenirs/index.html">Souvenirs</a>
+        </li>
 
+        <li>
+          <a href="contact/index.php">Contact</a>
+        </li>
+      </ul>
 
+      <h1 class="titre">BDE G4</h1>
 
-  <div class="photo_pc">
+      <a>
+        <img src="icons/logo.png" class="logo">
+      </a>
+    </nav>
 
-    <div class="photo_texte">
-      <img src="icons/Paul.png" class="photo_membre">
-      <p>Paul Antoine</p>
-      <p>Président</p>
-    </div>
-
-    <div class="photo_texte">
-      <img src="icons/Teddy.png" class="photo_membre">
-      <p>Teddy Fontep</p>
-      <p>Vice-président</p>
-    </div>
-    <div class="photo_texte">
-      <img src="icons/Nathael.png" class="photo_membre">
-      <p>Nathael Stalder</p>
-      <p>Secrétaire</p>
-    </div>
-
-    <div class="photo_texte">
-      <img src="icons/Cedrick.png" class="photo_membre">
-      <p>Cédrick Melzheim</p>
-      <p>Trésorier</p>
-    </div>
-
-    <div class="photo_texte">
-      <img src="icons/Tom.png" class="photo_membre">
-      <p>Tom Victor</p>
-      <p>Résponsable communication</p>
-    </div>
-
-    <div class="photo_texte">
-      <img src="icons/Camil.png" class="photo_membre">
-      <p>Camil Nitel Hadj</p>
-      <p>Responsable évènement</p>
-    </div>
-  </div>
-
-  <div id="ligne_separation">
-  </div>
-  <!-- Bande géré par de CSS -->
-
-  <div class="event1">
-    <div id="contour_laser">
-      <div v class="row">
-        <h1>Journée d'intégration de l'institut G4 !</h1>
-        <p>Au programme :<br></p>
-        <p class="text_karting">- Karting<br>- Bowling<br>- Laser Game<br></p>
-        <p>On finit la journée au bar à discuter entre nouveaux et anciens élèves.</p>
-        <h1>Venez nombreux !</h1>
-        <div>
-          <button onclick="window.location.href='#'" type="button" class="btn btn-outline-info">En
-            savoir plus</button>
+    <section class="Membres">
+      <h2 class="titre">PRESENTATION DES MEMBRES DU BDE</h2>
+      <div class="grille grid">
+        <div class="pres">
+          <a>
+            <img src="icons/Paul.png">
+            <p class="name">Paul Antoine</p>
+            <p class="name">Président</p>
+          </a>
         </div>
-        <p>Date et lieu à convenir</p>
+        <div class="pres"> 
+          <a>
+            <img src="icons/Teddy.png">
+            <p class="name">Teddy Fontep</p>
+            <p class="name">Vice-président</p>
+          </a>
+        </div>
+        <div class="pres">
+          <a>
+            <img src="icons/Nathael.png">
+            <p class="name">Nathael Stalder</p>
+            <p class="name">Secrétaire</p>
+          </a>
+        </div>
+        <div class="pres">
+          <a>
+            <img src="icons/Cedrick.png">
+            <p class="name">Cedrick Melzheim</p>
+            <p class="name">Tresorier</p>
+          </a>
+        </div>
+        <div class="pres">
+          <a>
+            <img src="icons/Tom.png">
+            <p class="name">Tom Victor</p>
+            <p class="name">Responsable communication</p>
+          </a>
+        </div>
+        <div class="pres">
+          <a>
+            <img src="icons/Camil.png">
+            <p class="name">Camil Nitel Hadj</p>
+            <p class="name">Responsable évennements</p>
+          </a>
+        </div>
       </div>
-      <div id="contour_photo">
-        <img src="icons/Integration.jpg" id="photo_laser_kart">
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="ligne_separation2">
-  </div>
-
-  <div class="event2">
-    <div class="row">
-      <div class="col-6">
-        <img src="icons/Ski.png" id="photo_ski1">
+    <section class="event1">
+      <div class="event1_detail">
+        <img src="icons/Integration.jpg" alt="" class="kart" />
+        <div class="text_event">
+          <h2 class="nextevent">Journée d'intégration de l'institut G4 !</h2>
+          <p class="date">Octobre / Novembre 2023</p><br>
+          <p>Au programme :</p><br>
+          <p>- Karting<br>- Bowling<br>- Laser Game</p><br>
+          <p>On finit la journée au bar à discuter entre nouveaux et anciens élèves.</p>
+          <h1>Venez nombreux !</h1>
+          <br>
+          <a href="evenements/index.html"><button class="boutton_event">En savoir plus</button></a><br>
+        </div>
       </div>
-      <div class="col-6">
-        <h1 class="texte_integration2"><br><br><br>Journées ski avec le BDE
-        </h1>
-        <p class="texte_integration2">Venez passer la journée sur les pistes des plus belles stations avec l'équipe
-          BDE de votre école.<br><br>Tout au long de l'hiver, nous proposons des journées complètes de ski
-          sur plusieurs stations différentes.
-        </p>
-        <h1 class="texte_integration2">Venez nombreux !</h1>
-        <button onclick="window.location.href='#'" type="button" class="btn btn-outline-info">En
-          savoir plus</button>
-        <p><br>Hiver 2023</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-    <!-- Footer -->
+    <section class="event2">
+      <div class="event2_detail">
+        <div class="text_event">
+          <h2 class="nextevent">Journée Ski avec le BDE</h2>
+          <p class="date">En hiver 2023/2024</p><br>
+          <p class="texte_integration2">Venez passer la journée sur les pistes des plus belles stations avec l'équipe
+            BDE de votre école.<br><br>Tout au long de l'hiver, nous proposons des journées complètes de ski
+            sur plusieurs stations différentes.
+          </p><br><br>
+          <a href="evenements/index.html"><button class="boutton_event">En savoir plus</button></a>
+        </div>
+        <img src="icons/Ski.png"class="ski" />
+      </div>
+    </section>
 
-  <div id="bande_foot_pc">
-    <div class="row" class="col-1">
-      <div id="copyright">
-        <h1>BDE G4</h1>
-        <a href="mentions_légales/index.html">Mentions légales</a>
+    <nav class="navigation grid footera">
+      <ul class="links">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+
+        <li>
+          <a href="pres_membres/index.html">Les Membres</a>
+        </li>
+
+        <li>
+          <a href="evenements/index.html">Evenements</a>
+        </li>
+
+        <li>
+          <a href="Souvenirs/index.html">Souvenirs</a>
+        </li>
+
+        <li>
+          <a href="contact/index.php">Contact</a>
+        </li>
+      </ul>
+
+      <div class="div">
+        <a class="titre">BDE G4</a><br><br>
+        <a class="mentions" href="mentions_légales/index.html">Mentions légales</a>
       </div>
 
-      <div class="col-5 cadre_menu">
-        <ul class="menu">
-          <li>
-            <a href="#">Accueil</a>
-          </li>
-          <li>
-            <a href="pres_membres/index.html">Les Membres</a>
-          </li>
-          <li>
-            <a href="evenements/index.html">Evenements</a>
-          </li>
-          <li>
-            <a href="Souvenirs/index.html">Souvenirs</a>
-          </li>
-          <li>
-            <a href="contact/index.html">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</body>
+      <a>
+        <img src="icons/logo.png" class="logo">
+        
+      </a>
+    </nav>
+  </body>
 </html>

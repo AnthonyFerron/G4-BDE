@@ -1,9 +1,6 @@
-const formRegister = document.forms['register-form'];
-if (formRegister) {
- const name = formRegister['name'];
- const email = formRegister['email'];
- const message = formRegister['message'];
- if (name.value !== '' && email.value !== '' && message.value !== '') {
-        console.log("ok");
-    }
+if (window.screen.width < 1300){
+    let colonne = document.getElementById('forme');
+    colonne.classList.toggle('flex-column');
+    let formulaire = document.getElementById('formulaire');
+    formulaire.classList.toggle('w-100');
 }
