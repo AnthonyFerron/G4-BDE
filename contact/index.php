@@ -52,7 +52,7 @@
             Nom : " . $_POST["nom"] . "
             Email : " . $_POST["email"] . "
             Nom : " . $_POST["message"];
-            $retour  = mail("hetzel.mael01@gmail.com", "message formulaire BDE Institut G4" , . . $_POST["nom"] ." ". $_POST["message"],"");
+            $retour  = mail("hetzel.mael01@gmail.com", "message formulaire BDE Institut G4" ,$_POST["email"]. $_POST["nom"] ." ". $_POST["message"],"");
             if ($retour) {
                 echo "<p>l'email a bien été envoyé.</p>";
             }
