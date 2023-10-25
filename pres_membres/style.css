@@ -1,56 +1,17 @@
-/* head */
-
-#bande_head_pc {
-  visibility: visible;
-  display: inline-block;
-  background-color: #D2F8F6;
-  height: 150px;
-  width: 100%;
-}
-
-#bande_head_pc h1 {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-}
-
-.menu {
-  display: flex;
-  /* Transformation en flexbox */
-  padding: 0;
-  /* Suppression des marges internes */
-}
-
-.menu a {
-  display: block;
-  /* Transformation en block */
-  min-width: 120px;
-  /* Largeur minimale des liens */
-  text-align: center;
-  /* Centrage du texte */
-  color: black;
-  /* Couleur du texte */
-  text-decoration: none;
-  /* Suppression du soulignement */
-  transition: all 0.5s;
-  /* Ajout des effets de transition */
-  margin-top: 25px;
-  font-size: large;
-}
-
-.menu li {
-  list-style-type: none;
-  /* Suppression des puces */
-}
-
-.menu li a:hover {
-  color: #54c1f2;
-}
-
 /* body */
 
 body {
   background-image: url(../icons/fond1.png);
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url("../polices/Roboto-Regular.ttf");  
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../polices/Oswald-Regular.ttf");
 }
 
 .pres-container {
@@ -110,16 +71,14 @@ body {
 .pres-name {
   text-align: center;
   width: 20%;
+  font-family: 'Roboto';
 }
 
-.pres-name {
-  text-align: center;
-  width: 21%;
-}
 
 .pres-content {
   width: 60%;
   text-align: center;
+  font-family: 'Oswald';
 }
 
 .pres-container-contact {
@@ -133,6 +92,7 @@ body {
   text-align: center;
   width: 25%;
   justify-content: top;
+  font-family: 'Roboto';
 }
 
 .img-reseaux {
@@ -140,27 +100,80 @@ body {
   height: auto;
 }
 
+/* head and foot */
 
-/* footer */
+.links{
+  margin-top: 40px;
+  margin-left: 10px;
+  font-family: 'Oswald';
+}
 
-  .row
-  {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-  }
 
-  #bande_foot_pc
-  {
-    margin-top: 5%;
-    background-color: #D2F8F6;
-  }
 
-  .cadre_menu
-  {
-    display: flex;
-    justify-content: center;
-  }
 
-  /* Fin footer */
+.titrea {
+  font-size: xx-large;
+  font-family: 'Roboto';
+  margin-top: 40px;
+}
+
+.mentions:hover {
+  color: #54c1f2;
+  transition: 0.3s;
+}
+
+.name {
+  font-family: 'Oswald';
+}
+
+.div {
+  margin-left:30px;
+  text-align: center;
+}
+
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #D2F8F6;
+  min-height: 150px;
+}
+
+.footera {
+  margin-top: 2%;
+}
+
+.navigation a {
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  font-family: 'Oswald';
+  text-decoration: none;
+}
+
+.navigation h1 {
+  text-align: center;
+  color: black;
+  font-family: 'Oswald';
+}
+
+.navigation p {
+  text-align: left;
+}
+
+
+.navigation li :hover{
+  color: #54c1f2;
+  transition: 0.3s;
+}
+
+.grille {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.navigation a {
+  font-size:x-large;
+}
+
+.navigation li {
+  display: inline-block;
+}

@@ -1,5 +1,3 @@
-/* Variables */
-
 /* reset */
 body,
 p,
@@ -36,10 +34,18 @@ h3 {
   font-size: 1.2em;
 }
 
+.text_integration2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .links{
   margin-top: 40px;
   margin-left: 10px;
+  font-family: 'Oswald';
 }
+
+    /* Le titre de la page */
 
 .title {
   width: 30%;
@@ -50,21 +56,28 @@ h3 {
   font-family: 'Roboto';
 }
 
-.mentions:hover {
-  color: #54c1f2;
-  transition: 0.3s;
-}
+/* Details sur les noms */
 
 .name {
   font-family: 'Oswald';
 }
 
-.div {
+/* Details sur les bouttons mentions */
+
+.mentions:hover {
+  color: #54c1f2;
+  transition: 0.3s;
+}
+
+
+.mentions_titre {
   margin-left:30px;
   text-align: center;
 }
 
 /* mobile style */
+
+  /* Navigation du header et footer */
 
 .navigation {
   display: grid;
@@ -74,7 +87,7 @@ h3 {
 }
 
 .footera {
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 .navigation a {
@@ -133,11 +146,20 @@ h3 {
   display: none;
 }
 
+/* Présentation membres */
+.pres {
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
 .membres h2 {
   text-align: center;
   margin-top: 2.5%;
   margin-bottom: 5%;
 }
+
+/* Grille contenant les membres */
 
 .grille {
   display: grid;
@@ -155,6 +177,8 @@ h3 {
   height: 200px;
 }
 
+/* Parti évennements*/
+
 .event1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -170,10 +194,12 @@ h3 {
 
 .nextevent {
   text-align: center;
+  font-family: 'Roboto';
 }
 
 .text_event{
   text-align: center;
+  font-family: 'Oswald';
 }
 
 .text_event p h3{
@@ -207,7 +233,8 @@ h3 {
   border-radius: 5%;
 }
 
-
+  /* Style des bouttons*/
+  
 .boutton_event {
   border: 1px solid #54c1f2;
   border-radius: 8px;
@@ -230,6 +257,7 @@ h3 {
   user-select: none;
   -webkit-user-select: none;
   width: auto;
+  font-family: 'Oswald';
 }
 
 .boutton_eventc:focus-visible {
@@ -241,12 +269,6 @@ h3 {
  background-color: #F7F7F7;
  border-color: #000000;
  transform: scale(.96);
-}
-
-.pres {
-  display:flex;
-  justify-content: space-around;
-  margin-bottom: 10%;
 }
 
 
