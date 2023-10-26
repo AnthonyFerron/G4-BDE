@@ -22,12 +22,12 @@ body {
 /* fonts */
 @font-face {
   font-family: "Roboto";
-  src: url("../../Polices/Roboto-Regular.ttf");
+  src: url("../../polices/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../Polices/Oswald-Regular.ttf");
+  src: url("../../polices/Oswald-Regular.ttf");
 }
 
 h1,
@@ -48,8 +48,7 @@ h3 {
 
 
 .tableaux {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   text-align: center;
 }
 

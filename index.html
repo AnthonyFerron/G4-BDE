@@ -8,35 +8,29 @@
   </head>
 
   <body>
-    <nav class="navigation grid">
-      <ul class="links">
-        <li>
-          <a href="#">Accueil</a>
-        </li>
+    <nav>
+      <div class="container">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="#">Accueil</a>
+            <a href="#">evenements</a>
+            <a href="#">pres membre</a>
+            <a href="#">souvenir</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <div class="div_logo">
+          <img class="logo" src="icons/logo.png">
+        </div>
+      </div>
+  </nav>
 
-        <li>
-          <a href="pres_membres/index.html">Les Membres</a>
-        </li>
+  <script>
+    document.querySelector("#toggle").onclick = function() {
+    document.querySelector(".div_logo").style.display=(window.getComputedStyle(document.querySelector('.div_logo')).display=='none') ? "block" : "none";}
+  </script>
 
-        <li>
-          <a href="evenements/index.html">Evenements</a>
-        </li>
-
-        <li>
-          <a href="Souvenirs/index.html">Souvenirs</a>
-        </li>
-
-        <li>
-          <a href="contact/index.php">Contact</a>
-        </li>
-      </ul>
-
-      <h1 class="titre">BDE G4</h1>
-
-      <a>
-        <img src="icons/logo.png" class="logo">
-      </a>
-    </nav>
 
     <section class="Membres">
       <h2 class="titre">PRESENTATION DES MEMBRES DU BDE</h2>
