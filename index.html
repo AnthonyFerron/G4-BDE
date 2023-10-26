@@ -7,33 +7,40 @@
     <link rel="icon" type="image/vnd.icon" href="icons/logo.png">
   </head>
 
-  <body>
-    <nav>
-      <div class="container">
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-        <div class="main_pages">
-            <a href="#">Accueil</a>
-            <a href="#">evenements</a>
-            <a href="#">pres membre</a>
-            <a href="#">souvenir</a>
-            <a href="#">Contact</a>
-        </div>
-        
-        <div class="div_logo">
-          <img class="logo" src="icons/logo.png">
-        </div>
+<body>
+  <nav id="mobilemenu">
+
+    <div class="parent">
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <div class="div1"> 
+        <a href="#">Accueil</a>
+        <a href="evenements/index.html">Évenements</a>
+        <a href="pres_membres/index.html">Pres membre</a>
+        <a href="Souvenirs/index.html">Souvenirs</a>
+        <a href="contact/index.php">Contact</a> 
       </div>
+        
+
+      <div class="div2">          
+      </div>
+      <div class="div3">
+        <img class="logo" src="icons/logo.png">
+      </div>
+    </div>
+
   </nav>
 
   <script>
     document.querySelector("#toggle").onclick = function() {
-    document.querySelector(".div_logo").style.display=(window.getComputedStyle(document.querySelector('.div_logo')).display=='none') ? "block" : "none";}
+    document.querySelector(".div3").style.display=(window.getComputedStyle(document.querySelector('.div3')).display=='none') ? "flex" : "none";}
   </script>
+
+    <!-- body -->
 
 
     <section class="Membres">
-      <h2 class="titre">PRESENTATION DES MEMBRES DU BDE</h2>
+      <h2 class="titre">PRÉSENTATION DES MEMBRES DU BDE</h2>
       <div class="grille grid">
         <div class="pres">
           <a>
@@ -80,69 +87,59 @@
       </div>
     </section>
 
-    <section class="event1">
-      <div class="event1_detail">
-        <img src="icons/Integration.jpg" alt="" class="kart" />
-        <div class="text_event">
-          <h2 class="nextevent">Journée d'intégration de l'institut G4 !</h2>
-          <p class="date">Octobre / Novembre 2023</p><br>
-          <p>Au programme :</p><br>
-          <p>- Karting<br>- Bowling<br>- Laser Game</p><br>
-          <p>On finit la journée au bar à discuter entre nouveaux et anciens élèves.</p>
-          <h1 class="nextevent">Venez nombreux !</h1>
-          <br>
-          <a href="evenements/index.html"><button class="boutton_event">En savoir plus</button></a><br>
+    <section class="events">
+      <div class="event1">
+        <img src="/icons/Integration.jpg" />
+        <div class="text_event1">
+          <h1>Journée d'intégration</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+            possimus ab sit eius minus dignissimos, tenetur corrupti
+            perspiciatis, maiores, adipisci recusandae at facere blanditiis
+            eveniet sequi eligendi qui deleniti in?
+          </p>
+          <div class="boutton1" onclick="window.location.href='../evenements/index.html';"><button>Plus de détails</button></div>
         </div>
       </div>
-    </section>
 
-    <section class="event2">
-      <div class="event2_detail">
-        <div class="text_event">
-          <h2 class="nextevent">Journée Ski avec le BDE</h2>
-          <p class="date">En hiver 2023/2024</p><br>
-          <p class="texte_integration2">Venez passer la journée sur les pistes des plus belles stations avec l'équipe
-            BDE de votre école.<br><br>Tout au long de l'hiver, nous proposons des journées complètes de ski
-            sur plusieurs stations différentes.
-          </p><br><br>
-          <a href="evenements/index.html"><button class="boutton_event">En savoir plus</button></a>
+      <div class="event2">
+        <div class="text_event2">
+          <h1>Journée Ski</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+            possimus ab sit eius minus dignissimos, tenetur corrupti
+            perspiciatis, maiores, adipisci recusandae at facere blanditiis
+            eveniet sequi eligendi qui deleniti in?
+          </p>
+          <div class="boutton1" onclick="window.location.href='../evenements/index.html';"><button>Plus de détails</button></div>
         </div>
-        <img src="icons/Ski.png"class="ski" />
+        <img src="/icons/Ski.png" />
       </div>
     </section>
+  
+  <nav id="mobilemenu">
 
-    <nav class="navigation grid footera">
-      <ul class="links">
-        <li>
-          <a href="#">Accueil</a>
-        </li>
-
-        <li>
-          <a href="pres_membres/index.html">Les Membres</a>
-        </li>
-
-        <li>
-          <a href="evenements/index.html">Evenements</a>
-        </li>
-
-        <li>
-          <a href="Souvenirs/index.html">Souvenirs</a>
-        </li>
-
-        <li>
-          <a href="contact/index.php">Contact</a>
-        </li>
-      </ul>
-
-      <div class="mentions_titre">
-        <a class="titre">BDE G4</a><br><br>
-        <a class="mentions" href="mentions_légales/index.html">Mentions légales</a>
+    <div class="f_parent">
+      <div class="f_div1"> 
+        <a id="scroll-up" class="scroll-up" href="#">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+            </path>
+          </svg>
+        </a>
       </div>
-
-      <a>
-        <img src="icons/logo.png" class="logo">
         
-      </a>
-    </nav>
-  </body>
+
+      <div class="f_div2">
+        <a href="mentions_légales/index.html">Mentions légales</a> 
+      </div>
+      <div class="f_div3">
+        <img class="logo" src="icons/logo.png">
+      </div>
+    </div>
+  </nav>
+
+
+</body>
 </html>

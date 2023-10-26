@@ -11,12 +11,14 @@ li {
   text-decoration: none;
 }
 
-body {
-  background-image: url(../icons/fond1.png);
-}
 
 li {
   list-style-type: none;
+  
+}
+
+body{
+  background-image: url("../icons/fond1.png");
 }
 
 /* bass style */
@@ -25,6 +27,7 @@ li {
 @font-face {
   font-family: "Roboto";
   src: url("../polices/Roboto-Regular.ttf");
+  
 }
 
 @font-face {
@@ -35,56 +38,77 @@ li {
 h1,
 h3 {
   font-size: 1.2em;
+  
 }
 
 .titre{
   text-align: center;
+  color: #0bb5ff;
 }
 
 .tableaux {
   display: flex;
   text-align: center;
+  
 }
 
 .event1 img {
   width: 100%;
-  border-radius: 25px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .event2 img {
   width: 100%;
   border-radius: 25px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .event3 img {
   width: 100%;
   border-radius: 25px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .event1 {
-  background-color: #a5f2ee;
+  background-color: #ffffff;
   border-radius: 25px;
   margin: 5%;
   font-family: 'Oswald';
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+ 
 }
 
 .event2 {
-  background-color: #a5f2ee;
+  background-color: #ffffff;
   border-radius: 25px;
   margin: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+  
 }
 
 .event3 {
-  background-color: #a5f2ee;
+  background-color: #ffffff;
   border-radius: 25px;
   margin: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+  
 }
 
 .nom_event{
   font-family: 'Roboto';
+  color: #0bb5ff;
+  margin-top: 5%;
 }
 
 .texte_event{
+  font-family: 'Oswald';
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #000033;
+}
+
+.date{
+  color: #0BB5FF;
   font-family: 'Oswald';
 }
 
@@ -118,75 +142,213 @@ h3 {
 
 /* head and foot */
 
-.links{
-  margin-top: 40px;
-  margin-left: 10px;
-  font-family: 'Oswald';
+#mobilemenu {
+  margin-bottom: 75px;
 }
 
-.titrea {
+nav 
+{
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+    border-bottom: 1px solid #0bb5ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+
+}
+
+nav .div1 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ 
+nav .div1 a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #001c66;
+}
+ 
+nav a:hover 
+{
+    color: #0bb5ff
+}
+
+label, #toggle
+{
+  display: none;
+}
+
+@media all and (min-width: 992px) {
+
+  .logo {
+    display:flex;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    text-shadow: 1px 3px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    font-size: x-large;
+  
+    }
+    
+    .div1 { 
+      grid-area: 1 / 1 / 2 / 4; 
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+    
+    }
+    .div2 { grid-area: 1 / 4 / 2 / 5; }
+    .div3 { 
+      grid-area: 1 / 5 / 2 / 6; 
+      align-items: center;
+      justify-content: end;  
+      width: 20%;
+      display: flex;
+      margin-right: 5%;
+      height: 150px;;
+  
+    }
+    label
+  {
+    display: none !important;
+  }
+  }
+
+@media all and (max-width: 991px)
+{
+  
+  
+  nav
+  {
+      height: 150px;
+  }
+
+  .div3 {
+    display:flex;
+    justify-content: end;
+  }
+
+  .logo {
+    margin-top: 30px;
+    margin-right: 10%;
+  }
+
+  nav .div1
+  {
+      display: none;
+      flex-direction: column;
+      background: #ffffff;
+      height: 220px;
+      border-bottom: 1px solid #0bb5ff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+  }
+
+  nav .div1 a {
+      width: 50%;
+  }
+
+  label 
+  {
+      width: 30px;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
+      margin-top: 45px;
+      font-size: 40px;
+      color: #001c66;
+      cursor:pointer;
+     
+  }
+
+  #toggle:checked + .div1 {
+    display: flex;
+  }
+
+}
+/*bou je t'ai fait peur*/
+/* foot */
+
+nav .f_parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: 1px 3px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+  font-family: 'Oswald', sans-serif;
+  color: #001c66;
+  border-top: 1px solid #0bb5ff;
+  box-shadow: rgba(50, 50, 93, 0.25) 2px 0px -1px -1px;
   font-size: xx-large;
-  font-family: 'Roboto';
+}
+
+.f_div3 {
   margin-top: 40px;
 }
 
-.mentions:hover {
-  color: #54c1f2;
-  transition: 0.3s;
-}
-
-.name {
-  font-family: 'Oswald';
-}
-
-.div {
-  margin-left:30px;
-  text-align: center;
-}
-
-
-.navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #D2F8F6;
-  min-height: 150px;
-}
-
-.footera {
-  margin-top: 2%;
-}
-
-.navigation a {
-  text-align: center;
-  padding: 0.5rem;
-  color: black;
-  font-family: 'Oswald';
+.f_div2 a {
   text-decoration: none;
 }
 
-.navigation h1 {
-  text-align: center;
-  color: black;
-  font-family: 'Oswald';
+.f_div1 {
+  margin-top: 40px;
 }
 
-.navigation p {
-  text-align: left;
+/* boutton */
+
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
+}
+/* <main-style> ============================ */
+.scroll-up {
+	/* position: fixed; */
+  right: 3rem;
+  bottom: -50%;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: rgba(29, 29, 31, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: bottom .4s, transform .4s;
 }
 
-
-.navigation li :hover{
-  color: #54c1f2;
-  transition: 0.3s;
+.scroll-up:hover {
+  transform: translateY(-.25rem);
 }
 
-.grille {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.navigation a {
-  font-size:x-large;
+/* Show scroll-up */
+._show-scroll {
+  bottom: 3rem;
 }
 
-.navigation li {
-  display: inline-block;
+@media (max-width: 1199.98px) {
+  .scroll-up {
+    right: 1rem;
+  }
 }

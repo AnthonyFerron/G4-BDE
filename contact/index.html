@@ -15,36 +15,35 @@
     crossorigin="anonymous"></script>
     <script src="javascript_contact.js" defer></script>
 </head>      
-<!-- head -->
-  <nav class="navigation grid">
-    <ul class="links">
-      <li>
+  <!-- head -->
+
+  <nav id="mobilemenu">
+
+    <div class="parent">
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle" class="label">
+      <div class="div1"> 
         <a href="../index.html">Accueil</a>
-      </li>
-
-      <li>
-        <a href="../pres_membres/index.html">Les Membres</a>
-      </li>
-
-      <li>
         <a href="../evenements/index.html">Evenements</a>
-      </li>
-
-      <li>
+        <a href="../pres_membres/index.html">Pres membre</a>
         <a href="../Souvenirs/index.html">Souvenirs</a>
-      </li>
+        <a href="#">Contact</a> 
+      </div>
+        
 
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
+      <div class="div2">          
+      </div>
+      <div class="div3">
+        <img class="logo" src="../icons/logo.png">
+      </div>
+    </div>
 
-    <h1 class="titrea">BDE G4</h1>
-
-    <a>
-      <img src="../icons/logo.png" class="logo">
-    </a>
   </nav>
+
+  <script>
+    document.querySelector("#toggle").onclick = function() {
+    document.querySelector(".div3").style.display=(window.getComputedStyle(document.querySelector('.div3')).display=='none') ? "flex" : "none";}
+  </script>
 
 <!-- body -->
     <?php
@@ -65,8 +64,8 @@
     </div>
     <div id="forme" class="formres">
      <div class="formulaire" id="formulaire" class="col-5" >
-        <h3>formulaire de contact</h3>
-        <p>Laissez nous votre message.</p>
+        <h3>Formulaire de contact</h3>
+        <p class="texte">Laissez nous votre message.</p>
         <form name="register-form" method="post" class="form form-control">
           <div>
             <input type="text" size="60%" name="nom" class="form-control" placeholder="Nom..." required />
@@ -77,57 +76,47 @@
           <div>
             <input type="text" id="register-form[message]" name="message" class="form-control" placeholder="Message..." required />
           </div>
-            <div class="buttons">
-            <input type="submit" value="Envoyer le message" name="Envoyer" class="btn btn-outline-info" />
+            <div class="btn">
+            <input type="submit" value="Envoyer le message" name="Envoyer" class=" btn btn-outline-info"/>
           </div>
          </form>
       </div>
          
       <div id="reseaux">   
-          <h3>Réseaux</h3>
-            <img class="icon" src="../icons/icone_lindin.png"></a>
+          <h3 class="titre-reseaux">Réseaux</h3>
             <a href="https://www.instagram.com/bdeg4lyon/"><img type="button" class="icon" src="../icons/icone_insta.png"> </a>
-            <p>Suivez nous sur les réseaux</p>
+            <p class="texte">Suivez nous sur les réseaux</p>
             <img class="icon" src="../icons/icone_Gmail.png">
-            <p>Ou envoyez nous un e-mail via cette adresse</p>
-            <p>Adresse e-mail du BDE :</p>
-            <a href="association.ag4l@gmail.com">association.ag4l@gmail.com</a>
+            <p class="texte">Ou envoyez nous un e-mail via cette adresse</p>
+            <p class="texte">Adresse e-mail du BDE :</p>
+            <p class="adresse-reseaux"> association.ag4l@gmail.com </p>
       </div>
     </div>
     
     <!--footer  -->
-  <nav class="navigation grid footera">
-    <ul class="links">
-      <li>
-        <a href="../index.html">Accueil</a>
-      </li>
 
-      <li>
-        <a href="../pres_membres/index.html">Les Membres</a>
-      </li>
+  <nav id="foot">
 
-      <li>
-        <a href="../evenements/index.html">Evenements</a>
-      </li>
+    <div class="f_parent">
+      <div class="f_div1"> 
+        <a id="scroll-up" class="scroll-up" href="#">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+        
 
-      <li>
-        <a href="../Souvenirs/index.html">Souvenirs</a>
-      </li>
-
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-
-    <div class="div">
-      <a class="titrea">BDE G4</a><br><br>
-      <a class="mentions" href="../mentions_légales/index.html">Mentions légales</a>
+      <div class="f_div2">
+        <a href="../mentions_légales/index.html">Mentions légales</a> 
+      </div>
+      <div class="f_div3">
+        <img class="logo" src="../icons/logo.png">
+      </div>
     </div>
-
-    <a>
-      <img src="../icons/logo.png" class="logo">
-      
-    </a>
   </nav>
+
   </body>
 </html>

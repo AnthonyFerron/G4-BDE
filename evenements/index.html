@@ -15,51 +15,52 @@
   </head>
 
   <body>
-    <nav class="navigation grid">
-      <ul class="links">
-        <li>
+    <!-- head -->
+
+    <nav id="mobilemenu">
+
+      <div class="parent">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle" class="label">
+        <div class="div1"> 
           <a href="../index.html">Accueil</a>
-        </li>
-    
-        <li>
-          <a href="../pres_membres/index.html">Les Membres</a>
-        </li>
-    
-        <li>
           <a href="#">Evenements</a>
-        </li>
-    
-        <li>
+          <a href="../pres_membres/index.html">Pres membre</a>
           <a href="../Souvenirs/index.html">Souvenirs</a>
-        </li>
+          <a href="../contact/index.php">Contact</a> 
+        </div>
+          
     
-        <li>
-          <a href="../contact/index.php">Contact</a>
-        </li>
-      </ul>
+        <div class="div2">          
+        </div>
+        <div class="div3">
+          <img class="logo" src="../icons/logo.png">
+        </div>
+      </div>
     
-      <h1 class="titrea">BDE G4</h1>
-    
-      <a>
-        <img src="../icons/logo.png" class="logo">
-      </a>
     </nav>
+    
+    <script>
+      document.querySelector("#toggle").onclick = function() {
+      document.querySelector(".div3").style.display=(window.getComputedStyle(document.querySelector('.div3')).display=='none') ? "flex" : "none";}
+    </script>
+
 
     <section class="events">
-      <h1 class="titre">Evennements à venir</h1>
+      <h1 class="titre">EVENEMENTS A VENIR</h1>
 
       <div id="evento" class="tableaux ">
         <div class="event1">
           <img src="../icons/Integration.jpg" />
           <h1 class="nom_event">Journée d'integration</h1>
           <p class="date">04/10/2023 <br><br></p>
-          <p>Au programme :</p><br>
-          <p>- Karting<br>- Bowling<br>- Laser Game</p><br>
+          <p>Au programme :</p>
+          <p>- Karting - Bowling - Laser Game</p>
           <p>On finit la journée au bar à discuter entre nouveaux et anciens élèves.</p>
           <h1 class="nom_event">Venez nombreux !</h1>
         </div>
         <div class="event2">
-          <img src="../icons/Ski.png" />
+          <img src="../icons/Integration.jpg"/>
           <h1 class="nom_event">Nom de l'évennement</h1>
           <p class="date">01/01/2023 <br><br></p>
           <p class="texte_event">
@@ -83,38 +84,30 @@
       </div>
     </section>
 
-    <nav class="navigation grid footera">
-      <ul class="links">
-        <li>
-          <a href="../index.html">Accueil</a>
-        </li>
+    <!-- foot -->
+
+    <nav id="foot">
+
+      <div class="f_parent">
+        <div class="f_div1"> 
+          <a id="scroll-up" class="scroll-up" href="#">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+          
   
-        <li>
-          <a href="../pres_membres/index.html">Les Membres</a>
-        </li>
-  
-        <li>
-          <a href="#">Evenements</a>
-        </li>
-  
-        <li>
-          <a href="../Souvenirs/index.html">Souvenirs</a>
-        </li>
-  
-        <li>
-          <a href="../contact/index.php">Contact</a>
-        </li>
-      </ul>
-  
-      <div class="div">
-        <a class="titrea">BDE G4</a><br><br>
-        <a class="mentions" href="../mentions_légales/index.html">Mentions légales</a>
+        <div class="f_div2">
+          <a href="../mentions_légales/index.html">Mentions légales</a> 
+        </div>
+        <div class="f_div3">
+          <img class="logo" src="../icons/logo.png">
+        </div>
       </div>
-  
-      <a>
-        <img src="../icons/logo.png" class="logo">
-        
-      </a>
     </nav>
+
   </body>
 </html>
