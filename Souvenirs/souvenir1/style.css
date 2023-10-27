@@ -52,7 +52,15 @@ body{
     border-radius: 25px;
     margin: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+    background-color: #ffffff;
   }
+.name_event {
+  color:#0bb5ff
+}
+
+.date {
+  color:#0bb5ff
+}
 
 
   .event1 img {

@@ -38,6 +38,7 @@ h3 {
 .titre{
   text-align: center;
   color: #0BB5FF;
+  font-family: "Roboto";
 }
 
 .tableaux {
@@ -67,6 +68,7 @@ h3 {
   font-size: x-large;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
   padding-bottom: 8%;
+  background-color: #ffffff;
 }
 
 .event2 {
@@ -76,6 +78,7 @@ h3 {
   font-size: x-large;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
   padding-bottom: 8%;
+  background-color: #ffffff;
 }
 
 .event3 {
@@ -85,6 +88,7 @@ h3 {
   font-size: x-large;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
   padding-bottom: 8%;
+  background-color: #ffffff;
 }
 
 button {

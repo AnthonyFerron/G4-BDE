@@ -58,10 +58,49 @@ body{
 
 .pres {
   height: 250px;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media all and (min-width: 992px) {
+  .pres {
+    width: 90%;
+  }
+
+  .pres-container-contact {
+    margin-right: 0;
+  }
+
+  .pres-img {
+    width : 200px; height : 200px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .pres {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  .pres-container-contact {
+    margin-right: 4%;
+    margin-left: 2%;
+  }
+  .pres-content{
+    padding-left: 3% ;
+    padding-right: 3% ;
+    margin-left: 3% ;
+    margin-right: 3% ;
+  }
+
+  .Nom{
+    font-size: x-large;
+  }
+
+  .pres-img {
+    width : 150px; height : 150px;
+  }
 }
 
 .pres-right-container {
@@ -70,7 +109,6 @@ body{
 }
 
 .pres-img{
-  width : 200px; height : 200px;
   border: none;
   -moz-border-radius : 100%;
   -webkit-border-radius : 100%;
@@ -107,11 +145,16 @@ body{
   color: #0bb5ff;
 }
 
-.contact
+.contact-links{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
 .img-reseaux {
   width: 75px;
   height: auto;
-  margin-bottom: 5%;
+
 }
 
 /* head and foot */

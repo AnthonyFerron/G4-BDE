@@ -54,12 +54,18 @@ body{
 }
 
 .event1 {
-    background-color: #a5f2ee;
+    background-color: #ffffff;
     border-radius: 25px;
     margin: 5%;
   }
 
-
+  .name_event {
+    color:#0bb5ff
+  }
+  
+  .date {
+    color:#0bb5ff
+  }
   .event1 img {
   width: 100%;
   border-radius: 25px;

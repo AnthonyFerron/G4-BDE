@@ -46,7 +46,7 @@ h3 {
 
 h2{
   color: #0BB5FF;
-  font-family: 'Oswald';
+  font-family: "Roboto";
 }
 
 .text_integration2 {
@@ -169,7 +169,7 @@ h2{
 .event2 img {
   width: 100%;
   border-radius: 0px 0px 20px 20px;
-  height: auto;
+  height: 100%;
 }
 
 .text_event2 {

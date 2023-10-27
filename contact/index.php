@@ -25,7 +25,7 @@
       <div class="div1"> 
         <a href="../index.html">Accueil</a>
         <a href="../evenements/index.html">Évenements</a>
-        <a href="../pres_membres/index.html">Pres membre</a>
+        <a href="../pres_membres/index.html">Les Membres</a>
         <a href="../Souvenirs/index.html">Souvenirs</a>
         <a href="#">Contact</a> 
       </div>
