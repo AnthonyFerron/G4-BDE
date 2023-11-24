@@ -47,7 +47,7 @@
 
 <!-- body -->
     <?php
-        if (isset($_POST["message"])){            $message = "Ce  message vous a été envoyé  via la page contact du site du BDE Institut G4
+        if (isset($_POST["message"])){            $message = "Ce message vous a été envoyé via la page contact du site du BDE Institut G4
             Nom : " . $_POST["nom"] . "
             Email : " . $_POST["email"] . "
             Nom : " . $_POST["message"];
